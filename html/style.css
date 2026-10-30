@@ -1,0 +1,11 @@
+header{
+    text-align: center;
+    background-color: #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.conteiner{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
