@@ -1,8 +1,4 @@
 
-// ======================================
-// FILTRO DE CATEGORIAS
-// ======================================
-
 const botoesFiltro = document.querySelectorAll(".filtro");
 
 const itens = document.querySelectorAll(".item");
@@ -13,15 +9,12 @@ botoesFiltro.forEach(botao => {
 
     botao.addEventListener("click", function() {
 
-        // Remove o destaque dos outros botões
         botoesFiltro.forEach(btn => {
             btn.classList.remove("ativo");
         });
 
-        // Destaca o botão selecionado
         this.classList.add("ativo");
 
-        // Descobre a categoria escolhida
         const categoria = this.getAttribute("data-categoria");
 
         let encontrados = 0;
@@ -45,7 +38,6 @@ botoesFiltro.forEach(botao => {
 
         });
 
-        // Exibe mensagem se não houver resultados
         mensagemVazia.hidden = encontrados > 0;
 
     });

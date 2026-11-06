@@ -7,17 +7,11 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #10101a;
     color: white;
 }
-
-/* NAVBAR */
 
 .navbar {
     background-color: #171725;
@@ -36,21 +30,9 @@ footer span {
     color: #9b5cff;
 }
 
-.navbar-brand i {
-    color: #9b5cff;
-}
-
-.nav-link {
-    color: #ddd !important;
-    margin-left: 20px;
-    transition: 0.3s;
-}
-
 .nav-link:hover {
     color: #9b5cff !important;
 }
-
-/* BANNER */
 
 .banner {
     min-height: 490px;
@@ -61,10 +43,6 @@ footer span {
         linear-gradient(90deg, rgba(12,12,25,0.98), rgba(12,12,25,0.45)),
         url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600")
         center/cover no-repeat;
-}
-
-.banner-content {
-    max-width: 650px;
 }
 
 .destaque {
@@ -101,8 +79,6 @@ footer span {
     transform: translateY(-3px);
 }
 
-/* TÍTULO DA SEÇÃO */
-
 .titulo-secao h2,
 .sobre h2 {
     font-size: 35px;
@@ -113,8 +89,6 @@ footer span {
 .titulo-secao p {
     color: #aaa;
 }
-
-/* FILTROS */
 
 .filtro {
     color: #ddd;
@@ -131,8 +105,6 @@ footer span {
     color: white;
     border-color: #8b4de8;
 }
-
-/* CARDS */
 
 .catalogo-card {
     background-color: #1c1c2b;
@@ -156,20 +128,11 @@ footer span {
     object-fit: cover;
 }
 
-.catalogo-card .card-body {
-    padding: 17px;
-}
-
 .categoria {
     color: #ad7aff;
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 1px;
-}
-
-.catalogo-card h5 {
-    font-weight: bold;
-    margin-top: 10px;
 }
 
 .catalogo-card p {
@@ -186,10 +149,6 @@ footer span {
     font-size: 13px;
 }
 
-.informacoes i {
-    color: #ffc107;
-}
-
 .btn-detalhes {
     background-color: #8b4de8;
     color: white;
@@ -203,31 +162,15 @@ footer span {
     color: white;
 }
 
-/* MODAL */
-
 .modal-content {
     background-color: #1c1c2b;
     color: white;
     border: 1px solid #8b4de8;
 }
 
-.modal-header,
-.modal-footer {
-    border-color: #39394c;
-}
-
 .btn-fechar {
     background-color: #8b4de8;
     color: white;
-}
-
-.btn-fechar:hover {
-    background-color: #a46bff;
-    color: white;
-}
-
-.sobre {
-    background-color: #171725;
 }
 
 .sobre p {
@@ -245,64 +188,4 @@ footer {
 }
 
 
-
-footer p {
-    color: #aaa;
-    margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-
-    .banner {
-        min-height: 400px;
-        text-align: center;
-    }
-
-    .banner h1 {
-        font-size: 36px;
-    }
-
-    .banner p {
-        font-size: 15px;
-    }
-
-    .catalogo-card img {
-        height: 230px;
-    }
-
-    .titulo-secao h2,
-    .sobre h2 {
-        font-size: 28px;
-    }
-
-}
-
-@media (max-width: 400px) {
-
-    .banner h1 {
-        font-size: 29px;
-    }
-
-    .catalogo-card img {
-        height: 180px;
-    }
-
-    .catalogo-card .card-body {
-        padding: 12px;
-    }
-
-    .catalogo-card h5 {
-        font-size: 15px;
-    }
-
-    .catalogo-card p {
-        font-size: 12px;
-    }
-
-    .filtro {
-        padding: 7px 13px;
-        font-size: 13px;
-    }
-
-}
 
